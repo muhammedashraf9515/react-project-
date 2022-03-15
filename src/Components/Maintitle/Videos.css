@@ -1,0 +1,104 @@
+:root {
+    --main-color: #2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+    --section-background: #ececec;
+  }
+.videos {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+  }
+  .videos .holder {
+    display: flex;
+    justify-content: center;
+    background-color: var(--section-background);
+    border: 1px solid #ddd;
+  }
+  @media (max-width: 991px) {
+    .videos .holder {
+      flex-direction: column;
+    }
+  }
+  .videos .holder .list {
+    min-width: 300px;
+    background-color: white;
+  }
+  .videos .holder .list .name {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-weight: bold;
+    /* color: var(--main-color);*/
+  }
+  .videos .holder .list ul li {
+    padding: 20px;
+    border-top: 1px solid var(--section-background);
+    cursor: pointer;
+    transition: var(--main-transition);
+  }
+  .videos .holder .list ul li:hover {
+    background-color: #fafafa;
+    color: var(--main-color);
+  }
+  .videos .holder .list ul li span {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+  }
+  .videos .holder .preview {
+    background-color: #e2e2e2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .videos .holder .preview video {
+    max-width: 100%;
+    
+  }
+  .videos .holder .preview .info {
+    padding: 20px;
+    background-color: white;
+    margin-top: 10px;
+  }
+
+
+  .list {
+   background-color: #fff;
+   border-radius: 5px;
+   height: 520px; 
+   overflow-y: scroll;
+  }
+  .list::-webkit-scrollbar{
+    width: 7px;
+  }
+  .list::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 50px;
+  }
+  .list::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 50px;
+  }
+  .list .vid video {
+    width: 100px;
+    border-radius: 5px;
+  }
+  .list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+  }
+
+  .list .vid:hover {
+     
+  }
